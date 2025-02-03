@@ -126,8 +126,8 @@ int main(int argc, char *argv[])
     //самый быстрый
     uint16_t answer = get_crc_b(src, num_bytes);
     //старший и младший байт "регистра"
-	uint8_t low  = answer & 0x00FF; //65
-	uint8_t high = answer >> 8;     //CE
+    uint8_t low  = answer & 0x00FF; //65
+    uint8_t high = answer >> 8;     //CE
 
     printf("%02X %02X\n", low, high);
 
